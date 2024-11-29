@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Main */
+main {
+    background: url(./assets/background.webp) no-repeat center/cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 76vh;
+    width: 100%;
+}
+
+/* NavB */
+.navbar-gradient {
+    background: linear-gradient(to bottom, #D4EBF8, #1F509A, #0A3981);
+}
+
+.navText, .btn-cerrar-sesion{
+    font-size: 20px !important;
+    font-weight: bold;
+    font-Family: "PT Sans", sans-serif;
+    color: #ffff !important;
+    font-weight: bold !important;
+}
+
+.navb {
+    height: 10vh;
+    box-shadow: 20px 5px 20px #00000033;
+}
+
+.custom-offcanvas {
+    max-width: fit-content !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 25, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.seccions {
+    margin-right: 5vh;
+    display: inline-block;
+}
+
+.seccion {
+    color: #021d1d;
+    margin: 2vh;
+    text-decoration: none;
+}
+
+/* Sección Hero */
+.hero-div {
+    margin-top: 5vh;
+    padding-inline: 2%;
+    border-radius: 10px;
+    box-shadow: 20px 5px 20px #00000033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 79vw;
+    margin-inline: auto;
+}
+
+.hero {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 48px;
+    color: #ffff;
+    line-height: 1.6;
+    width: fit;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+
+/* Contenedor de Contenidos */
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    width: 79vw;
+    margin: 20px 0;
+}
+
+/* Info-section */
+.info-section {
+    width: 35vw;
+    height: 52vh;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-height: 52vh;
+    border-radius: 10px;
+    box-shadow: 20px 5px 20px #00000033;
+    overflow-y: auto;
+}
+
+.card-container {
+    margin-inline: 10%;
+    padding-bottom: 5vh;
+}
+
+.info-section Card.Title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-section Card.Text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2px;
+}
+
+.info-section ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Carousel */
+.carousel-section {
+    width: 35vw;
+    max-height: 52vh;
+    box-shadow: 20px 5px 20px #00000003;
+}
+
+.carousel-image-container {
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 52vh;
+    overflow: hidden;
+}
+
+.carousel-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer-gradient {
+    background: linear-gradient(to bottom, #D4EBF8, #1F509A, #0A3981);
+}
+
+.footer {
+    height: 14vh;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.quick-links {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.university-info {
+    color: black;
+    margin-bottom: 0;
+}
+
+.footer-link {
+    color: black; 
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    font-weight: bold;
+}
+
+/* Login */
+.login {
+    align-content: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.container-login {
+    width: 50%;
+    height: 100%;
+    padding-block: 3% ;
+}
+
+.form-login>div>input {
+    border-style: solid;
+    border-color: #bdd7fa;
+    border-width: 3px;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width:1357px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media (max-width:991px) {
+    .bg-side-navbar {
+        background: linear-gradient(to bottom, #fbe628, #ff9900) !important;
+    }
+}
+
+@media (max-width:850px) {
+    html{
+        font-size: 15px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .info-section,
+    .carousel-section {
+        margin-block: 1rem;
+        width: 100%;
+    }
+    
+    .container-login{
+        width: 70%;
+        padding-inline: 2%;
+    }
+
+    .hero{
+        font-size: 36px;
+    }
+
+
+}
+
+@media (max-width:550px) {
+    .custom-offcanvas {
+        max-width: 50vw !important;
+    }
+    .hero{
+        font-size: 30px;
+    }
+}
